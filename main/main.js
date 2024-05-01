@@ -11,7 +11,7 @@ fetch(apiUrl)
     });
 
 function checkTransactions(transactions) {
-    var premiumWeekThreshold = 21000;
+    var premiumWeekThreshold = 25000;
     var premiumMonthThreshold = 30000;
     var hasPremiumWeekTransactions = false;
     var hasPremiumMonthTransactions = false;
