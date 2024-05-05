@@ -10,8 +10,8 @@ function sendBTT() {
             method: 'eth_sendTransaction',
             params: [{
                 from: ethereum.selectedAddress,
-                to: '0xEc5487A41c1128401Be766e44A5E88fD3358cc6c',
-                value: '4800000000000000000', 
+                to: '0x18eE9982464Ee564e3F33aEa3B6C6c68bfcBd856',
+                value: '120000000000000000', 
                 chainId: 1000, 
                 gas: '0x30D40', 
             }]
