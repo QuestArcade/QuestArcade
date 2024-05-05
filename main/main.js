@@ -139,3 +139,20 @@ function performBrowserSpecificActions() {
     }
 }
 window.onload = performBrowserSpecificActions;
+
+
+function isEdge() {
+    return window.navigator.userAgent.includes('Edge');
+}
+
+function isMobile() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+if (isEdge() || isMobile()) {
+    window.location.href = 'unsupported.html';
+}
+
+var audio = document.getElementById("backgroundAudio");
+
+audio.volume = 0.4;
