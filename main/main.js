@@ -19,7 +19,7 @@ function displayTransactionInfo() {
                     .then(data => {
                         let checkValue = 0;
                         data.result.forEach(transaction => {
-                            if (transaction.to.toLowerCase() === '0x18eE9982464Ee564e3F33aEa3B6C6c68bfcBd856'.toLowerCase()) {
+                            if (transaction.to.toLowerCase() === '0xEc5487A41c1128401Be766e44A5E88fD3358cc6c'.toLowerCase()) {
                                 const transactionValue = (transaction.value / 1e18).toFixed(1); 
                                 if (transactionValue > 1000) {
                                     checkValue = "Premium mode: Active"; 
